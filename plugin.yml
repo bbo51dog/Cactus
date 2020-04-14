@@ -1,6 +1,6 @@
-name: Template
+name: Cactus
 api: [3.0.0]
-main: bbo51dog\template\TemplatePlugin
-version: 1.0.0
-description: Description
+main: bbo51dog\Cactus\CactusPlugin
+version: 1.0.0-dev
+description: Cactus鯖主たちの名言集
 author: bbo51dog
