@@ -10,7 +10,7 @@ class CactusPlugin extends PluginBase{
     private $words;
 
     public function onEnable(){
-        $file = $this->getResource('kana.json');
+        $file = $this->getResource('Words.json');
         $json = '';
         while (($line = fgets($file))) {
             $json .= $line;
