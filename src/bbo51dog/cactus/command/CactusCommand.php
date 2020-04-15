@@ -3,6 +3,8 @@
 namespace bbo51dog\cactus\command;
 
 use bbo51dog\cactus\WordList;
+use pocketmine\Player;
+use pocketmine\Server;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 
@@ -21,6 +23,11 @@ class CactusCommand extends Command{
     }
     
     public function execute(CommandSender $sender, string $commandLabel, array $args){
-        
+        $message = $this->wordList->getWord($this->wordKey);
+        if($sender instanceof Player){
+            $sender->chat($message);
+            return;
+        }
+        Server::getInstance()->broadcastMessage("[{$sender->getName()}] {$message}");
     }
 }
