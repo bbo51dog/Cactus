@@ -1,6 +1,6 @@
 name: Cactus
 api: [3.0.0]
-main: bbo51dog\Cactus\CactusPlugin
+main: bbo51dog\cactus\CactusPlugin
 version: 1.0.0-dev
 description: Cactus鯖主たちの名言集
 author: bbo51dog
