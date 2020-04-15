@@ -16,6 +16,7 @@ abstract class CactusCommandBase extends Command{
     
     public function __construct(WordList $wordList){
         $this->wordList = $wordList;
+        parent::__construct(strtolower($this->wordKey), "{$this->wordKey}の名言をランダムに発言します");
     }
     
     public function execute(CommandSender $sender, $commandLabel, string $args){
