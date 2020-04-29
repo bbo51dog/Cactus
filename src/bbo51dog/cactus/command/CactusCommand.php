@@ -28,6 +28,6 @@ class CactusCommand extends Command{
             $sender->chat($message);
             return;
         }
-        Server::getInstance()->broadcastMessage("[{$sender->getName()}] {$message}");
+        Server::getInstance()->broadcastMessage("[{$sender->getName()}] {$this->wordKey}「{$message}」");
     }
 }
